@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myuser
+    password: mypassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: gridview-app
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
+openshift:
+  deployment:
+    name: gridview-app
+    namespace: mynamespace
+  service:
+    name: gridview-app
+    port: 8080
+  route:
+    name: gridview-app
+    host: gridview-app.mynamespace.example.com
