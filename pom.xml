@@ -71,6 +71,13 @@
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
+        <!-- PostGres Database -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.23</version> <!-- Use the latest version available -->
+        </dependency>
+
         <!-- Optional Dependencies for Advanced Use Cases -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
